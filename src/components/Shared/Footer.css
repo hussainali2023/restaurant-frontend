@@ -1,26 +1,17 @@
-.footer{
-    /* flex-direction: row;
-    justify-content: space-between; */
-    align-items: normal;
-    justify-items: normal;
-}
+
 .item-parent{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-between; 
     width: 100%;
     gap: 0;
 }
 .item-1{
     background-color: rgba(0, 0, 0, 0.423);
     width:100%;
-    /* display: flex; */
-    /* justify-content: center; */
     
 }
 .item-2{
     background-color: rgba(0, 0, 0, 0.63);
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
 }

@@ -1,7 +1,13 @@
+import Banner from "./Banner/Banner";
+import PopularMenuItems from "./PopularMenuItems/PopularMenuItems";
+import Slider from "./Slider/Slider";
+
 const Home = () => {
   return (
     <div>
-      <h1>This is Home Page</h1>
+      <Banner />
+      <Slider />
+      <PopularMenuItems />
     </div>
   );
 };
