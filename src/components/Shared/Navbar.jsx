@@ -3,20 +3,23 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const navOptions = (
     <>
-      <Link className="mr-6 font-semibold" to={"/"}>
+      <Link className="mr-6 text-lg font-semibold" to={"/"}>
         Home
       </Link>
 
-      <Link className=" mr-6 font-semibold" to={"/menu"}>
+      <Link className=" mr-6 text-lg font-semibold" to={"/menu"}>
         Our Menu
       </Link>
+      <Link className=" mr-6 text-lg font-semibold" to={"/order"}>
+        Order
+      </Link>
 
-      <Link className="mr-6 font-semibold" to={"/contact"}>
+      <Link className="mr-6 text-lg font-semibold" to={"/contact"}>
         Contact Us
       </Link>
 
       <Link to={"/login"}>
-        <button className=" px-6 py-3 bg-[#fea109]">Login</button>
+        <button className=" text-lg px-6 py-3 bg-[#fea109]">Login</button>
       </Link>
     </>
   );
