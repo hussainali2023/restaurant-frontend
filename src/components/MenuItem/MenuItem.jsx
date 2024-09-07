@@ -3,7 +3,11 @@ const MenuItem = ({ item }) => {
   return (
     <div className=" flex">
       <div>
-        <img className=" w-20 h-14 rounded-full " src={item?.image} alt="" />
+        <img
+          className=" w-[100px] h-[65px] rounded-[0px_200px_200px_200px] "
+          src={item?.image}
+          alt=""
+        />
       </div>
       <div className="flex">
         <div className=" ml-4">
@@ -21,3 +25,14 @@ const MenuItem = ({ item }) => {
 };
 
 export default MenuItem;
+
+/* Rectangle 11 */
+
+// position: absolute;
+// width: 118px;
+// height: 104px;
+// left: 300px;
+// top: 2663px;
+
+// background: #D9D9D9;
+// border-radius: 0px 200px 200px 200px;

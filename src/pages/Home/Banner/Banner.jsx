@@ -13,22 +13,22 @@ const Banner = () => {
     <div className="">
       <Carousel autoPlay={true}>
         <div>
-          <img src={img1} />
+          <img className=" max-h-svh" src={img1} />
         </div>
         <div>
-          <img src={img2} />
+          <img className=" max-h-svh" src={img2} />
         </div>
         <div>
-          <img src={img3} />
+          <img className=" max-h-svh" src={img3} />
         </div>
         <div>
-          <img src={img4} />
+          <img className=" max-h-svh" src={img4} />
         </div>
         <div>
-          <img src={img5} />
+          <img className=" max-h-svh" src={img5} />
         </div>
         <div>
-          <img src={img6} />
+          <img className=" max-h-svh" src={img6} />
         </div>
       </Carousel>
     </div>

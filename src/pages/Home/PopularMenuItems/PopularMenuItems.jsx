@@ -16,7 +16,7 @@ const PopularMenuItems = () => {
   console.log(menuItems);
 
   return (
-    <section className="lg:mx-[300px]">
+    <section className=" my-10">
       <div>
         <SectionTitle subHeading={"Check it Out"} heading={"From our menu"} />
       </div>

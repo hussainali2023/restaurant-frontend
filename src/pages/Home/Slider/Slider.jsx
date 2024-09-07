@@ -15,7 +15,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Slider = () => {
   return (
-    <div className=" lg:mx-[300px] my-10">
+    <div className=" my-10">
       <SectionTitle
         subHeading={"From 11.00am to 10.00pm"}
         heading={"Order Online"}
