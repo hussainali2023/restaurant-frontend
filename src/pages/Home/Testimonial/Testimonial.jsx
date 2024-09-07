@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import commaLogo from "../../../assets/social-icons/comma.png";
 
 const Testimonial = () => {
   const [userReviews, setUserReviews] = useState([]);
@@ -34,7 +35,14 @@ const Testimonial = () => {
         {userReviews.map((review, index) => (
           <SwiperSlide key={index}>
             <div className="flex justify-center">
-              <Rating style={{ maxWidth: 180 }} value={review.rating} />
+              <Rating
+                style={{ maxWidth: 180, color: "#cd9003" }}
+                value={review.rating}
+                readOnly={true}
+              />
+            </div>
+            <div className=" flex justify-center my-6">
+              <img className="" src={commaLogo} alt="" />
             </div>
             <div className=" text-center max-w-[1096px]">
               <p className="text-xl">{review?.details}</p>

@@ -1,4 +1,26 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
+  const navOptions = (
+    <>
+      <Link className="mr-6 font-semibold" to={"/"}>
+        Home
+      </Link>
+
+      <Link className=" mr-6 font-semibold" to={"/menu"}>
+        Our Menu
+      </Link>
+
+      <Link className="mr-6 font-semibold" to={"/contact"}>
+        Contact Us
+      </Link>
+
+      <Link to={"/login"}>
+        <button className=" px-6 py-3 bg-[#fea109]">Login</button>
+      </Link>
+    </>
+  );
+
   return (
     <div className=" text-white">
       <div className="navbar fixed z-10 bg-opacity-30 bg-black ">
@@ -22,50 +44,21 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-52 p-8 gap-4 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link
+            to={"/"}
+            className=" uppercase font-semibold text-2xl text-[#fccb05]"
+          >
+            Bistro Boss
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          <ul className="menu menu-horizontal px-1 items-center">
+            {navOptions}
           </ul>
         </div>
       </div>
