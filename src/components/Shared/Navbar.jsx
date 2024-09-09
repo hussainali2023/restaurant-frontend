@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link className=" mr-6 text-lg font-semibold" to={"/menu"}>
         Our Menu
       </Link>
-      <Link className=" mr-6 text-lg font-semibold" to={"/order"}>
+      <Link className=" mr-6 text-lg font-semibold" to={"/order/salad"}>
         Order
       </Link>
 

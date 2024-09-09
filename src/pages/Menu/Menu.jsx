@@ -37,7 +37,7 @@ const Menu = () => {
         {/* dessert */}
         <MenuCategory
           items={dessert}
-          heading={"Dessert"}
+          heading={"dessert"}
           subHeading={
             "ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam mollis sag"
           }
@@ -48,7 +48,7 @@ const Menu = () => {
 
         <MenuCategory
           items={pizza}
-          heading={"Pizza"}
+          heading={"pizza"}
           subHeading={
             "ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam mollis sag"
           }
@@ -58,7 +58,7 @@ const Menu = () => {
         {/* Salad */}
         <MenuCategory
           items={salad}
-          heading={"Salad"}
+          heading={"salad"}
           subHeading={
             "ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam mollis sag"
           }
@@ -68,7 +68,7 @@ const Menu = () => {
         {/* Soup */}
         <MenuCategory
           items={soup}
-          heading={"Soup"}
+          heading={"soup"}
           subHeading={
             "ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam mollis sag"
           }

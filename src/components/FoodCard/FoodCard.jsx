@@ -1,11 +1,14 @@
 const FoodCard = ({ items }) => {
-  console.log(items);
+  // console.log(items);
   return (
     <div className=" grid md:grid-cols-3 gap-6">
       {items?.map((item) => (
         <div className=" w-[330px]" key={item?._id}>
           <div>
             <img className=" w-full" src={item?.image} alt="" />
+            <p className=" text-center text-xl py-4 bg-[#111827] text-white font-semibold">
+              ${item?.price}
+            </p>
           </div>
           <div className=" py-12 px-6 bg-[#f3f3f3] h-80">
             <h3 className=" text-center text-2xl font-semibold">
